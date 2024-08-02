@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project List</title>
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">    
+    <style>
+        .project-description {
+            display: none;
+        }
+        .project-description.expanded {
+            display: block;
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+        }
+        .card .github-link {
+            display: none;
+        }
+        .card:hover .github-link {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-4 p-4 bg-white shadow-sm rounded">
+        <div id="details" class="mb-1 text-center p-1">
+            <div class="d-flex justify-content-between text-secondary">
+                Gurminder S.
+                <a href="https://github.com/gurmindersingh5/" target="_blank"><i class="fab fa-github text-dark"></i> G i t H u b</a>
+            </div>
+            <div class="d-flex justify-content-between my-0 text-secondary">
+                📞 +1 437-333-5870
+                <a href="https://www.linkedin.com/in/gsmutta/" target="_blank"><i class="fab fa-linkedin"></i> L i n k e d i n</a>
+            </div>
+            <div class="d-flex justify-content-between text-secondary">
+                📨 gsmutta@proton.me
+            </div>
+            <a class="text-dark ">📝Project List✏️</a>
+        </div>
+
+        <div class="accordion" id="projectsAccordion">
+            <div class="card">
+                <div class="card-header" id="heading1">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#desc1" aria-expanded="true" aria-controls="desc1">
+                                Real Estate Django Application Backend
+                            </button>
+                        </h5>
+                        <a class="text-secondary h6 github-link" href="">Open in GitHub</a>
+                    </div>
+                </div>
+                <div id="desc1" class="collapse" aria-labelledby="heading1" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        <p>Designed and built a Django backend to manage property listings, user interactions, and search functionalities, focusing on user experience and data security. Integrated APIs for mapping and property data.</p>
+                        <div id="carousel1" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+1+Image+1" alt="Project Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+1+Image+2" alt="Project Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+1+Image+3" alt="Project Image 3">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#desc2" aria-expanded="false" aria-controls="desc2">
+                                Warehouse Management System
+                            </button>
+                        </h5>
+                        <a class="text-secondary h6 github-link" href="">Open in GitHub</a>
+                    </div>
+                </div>
+                <div id="desc2" class="collapse" aria-labelledby="heading2" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        <p>Developed a full-stack inventory and sales solution using Flask, PostgreSQL, and HTML/CSS/JS. Implemented real-time tracking and reporting features. Included NER model for Invoice processing to add new items into automatically to inventory.</p>
+                        <div id="carousel2" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://via.placeholder.com/300x200?text=Project+2+Image+1" alt="Project Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/300x200?text=Project+2+Image+2" alt="Project Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/300x200?text=Project+2+Image+3" alt="Project Image 3">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#desc3" aria-expanded="true" aria-controls="desc3">
+                                CI/CD Pipelines with GitOps
+                            </button>
+                        </h5>
+                        <a class="text-secondary h6 github-link" href="">Open in GitHub</a>
+                    </div>
+                </div>
+                <div id="desc3" class="collapse" aria-labelledby="heading3" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        <p>Implemented fully automated CI/CD pipelines using GitOps principles, leveraging tools like Jenkins, GitHub, Argo CD, Docker, Kubernetes, and SonarQube for static code analysis (SAST) and dynamic application security testing (DAST).</p>
+                        <div id="carousel3" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+1+Image+1" alt="Project Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+1+Image+2" alt="Project Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+1+Image+3" alt="Project Image 3">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#desc4" aria-expanded="true" aria-controls="desc4">
+                                Data Analysis with Pandas and PySpark
+                            </button>
+                        </h5>
+                        <a class="text-secondary h6 github-link" href="">Open in GitHub</a>
+                    </div>
+                </div>
+                <div id="desc4" class="collapse" aria-labelledby="heading4" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        <p>Conducted in-depth data analysis on large datasets using Pandas and PySpark. Generated insightful reports and created visualization dashboards with Seaborn and Matplotlib to create data-centric reporting solutions.</p>
+                        <div id="carousel4" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+4+Image+1" alt="Project Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+4+Image+2" alt="Project Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+4+Image+3" alt="Project Image 3">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel4" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel4" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading5">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#desc5" aria-expanded="true" aria-controls="desc5">
+                                Serverless Data Processing Pipeline (ETL) on AWS
+                            </button>
+                        </h5>
+                        <a class="text-secondary h6 github-link" href="">Open in GitHub</a>
+                    </div>
+                </div>
+                <div id="desc5" class="collapse" aria-labelledby="heading5" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        <p>Developed a serverless ETL pipeline on AWS to automate the ingestion, transformation, and storage of JSON data into Parquet format for efficient querying and analysis using AWS S3, Lambda, Glue, and Athena. Implemented a Pandas layer in the Lambda function for data normalization and extraction, and configured IAM roles for secure access.</p>
+                        <div id="carousel5" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+5+Image+1" alt="Project Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+5+Image+2" alt="Project Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+5+Image+3" alt="Project Image 3">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel5" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel5" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading6">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#desc6" aria-expanded="true" aria-controls="desc6">
+                                Real Estate Django Application Backend
+                            </button>
+                        </h5>
+                        <a class="text-secondary h6 github-link" href="">Open in GitHub</a>
+                    </div>
+                </div>
+                <div id="desc6" class="collapse" aria-labelledby="heading6" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        <p>Designed and built a Django backend to manage property listings, user interactions, and search functionalities, focusing on user experience and data security. Integrated APIs for mapping and property data.</p>
+                        <div id="carousel6" class="carousel slide" data-ride="carouse">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+6+Image+1" alt="Project Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+6+Image+2" alt="Project Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+6+Image+3" alt="Project Image 3">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel6" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel6" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading7">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#desc7" aria-expanded="true" aria-controls="desc7">
+                                Real Estate Django Application Backend
+                            </button>
+                        </h5>
+                        <a class="text-secondary h6 github-link" href="">Open in GitHub</a>
+                    </div>
+                </div>
+                <div id="desc7" class="collapse" aria-labelledby="heading7" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        <p>Designed and built a Django backend to manage property listings, user interactions, and search functionalities, focusing on user experience and data security. Integrated APIs for mapping and property data.</p>
+                        <div id="carousel7" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+7+Image+1" alt="Project Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+7+Image+2" alt="Project Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+7+Image+3" alt="Project Image 3">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel7" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel7" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading8">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#desc8" aria-expanded="true" aria-controls="desc8">
+                                Real Estate Django Application Backend
+                            </button>
+                        </h5>
+                        <a class="text-secondary h6 github-link" href="">Open in GitHub</a>
+                    </div>
+                </div>
+                <div id="desc8" class="collapse" aria-labelledby="heading8" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        <p>Designed and built a Django backend to manage property listings, user interactions, and search functionalities, focusing on user experience and data security. Integrated APIs for mapping and property data.</p>
+                        <div id="carousel8" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+8+Image+1" alt="Project Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+8+Image+2" alt="Project Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://via.placeholder.com/800x400?text=Project+8+Image+3" alt="Project Image 3">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel8" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel8" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            if (desc.classList.contains('expanded')) {
+                desc.classList.remove('expanded');
+            } else {
+                desc.classList.add('expanded');
+            }
+        }
+
+        function showImage(carousel, index) {
+            const images = carousel.querySelectorAll('img');
+            images.forEach((img, i) => img.style.display = i === index ? 'block' : 'none');
+        }
+
+        function nextImage(id) {
+            const carousel = document.getElementById(id).querySelector('.image-carousel');
+            const images = carousel.querySelectorAll('img');
+            let currentIndex = Array.from(images).findIndex(img => img.style.display === 'block');
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(carousel, currentIndex);
+        }
+
+        function prevImage(id) {
+            const carousel = document.getElementById(id).querySelector('.image-carousel');
+            const images = carousel.querySelectorAll('img');
+            let currentIndex = Array.from(images).findIndex(img => img.style.display === 'block');
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(carousel, currentIndex);
+        }
+
+    </script>
+</body>
+</html>
