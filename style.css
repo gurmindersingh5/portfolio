@@ -1,19 +1,1 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    flex-direction: column;
-}
 
-#projects{
-    height: auto;
-    width: 100%;
-    display: flex;
-    background-color: rgb(222, 222, 222);
-    border-radius: 1px;
-    
-}
